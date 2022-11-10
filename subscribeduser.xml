@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RSDA_APP_AUTOMATION">
+<listeners>
+<listener class-name="RSDA.RSDAAPP.Utility.Listeners"></listener>
+
+</listeners>
+  <test thread-count="5" name="Login">
+    <classes>
+       <class name="RSDA.RSDAAPP.Test.Login"/>
+      
+   </classes>
+   
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="LearningHub">
+    <classes>
+       <class name="RSDA.RSDAAPP.Test.LearningHub"/>
+      
+   </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="SettingPage">
+    <classes>
+       
+          <class name="RSDA.RSDAAPP.Test.Setting"/>
+   </classes>
+  </test> <!-- Test -->
+  
+ <test thread-count="5" name="MyProgressPage">
+    <classes>
+       
+         <class name="RSDA.RSDAAPP.Test.myprogress"/>
+         
+   </classes>
+  </test> <!-- Test -->
+ 
+ <test thread-count="5" name="VideoPage">
+    <classes>
+      
+       <class name="RSDA.RSDAAPP.Test.VideoPlayer"/>
+      </classes>
+  
+  </test> <!-- Test -->
+  
+ 
+  
+  <test thread-count="5" name="IniestaTV Page">
+    <classes>
+      
+       <class name="RSDA.RSDAAPP.Test.IniestaTv"/>
+        
+   </classes>
+  </test> <!-- Test -->
+  
+  
+  
+
+   </suite> <!-- Suite -->

@@ -1,0 +1,363 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 10 08:49:14 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (205 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RSDA.RSDAAPP.Test.Setting.setup()'><b>setup</b><br>Test class: RSDA.RSDAAPP.Test.Setting</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at RSDA.RSDAAPP.Test.Setting.setup(Setting.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1414934182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1414934182'><pre>java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at RSDA.RSDAAPP.Test.Setting.setup(Setting.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>RSDA.RSDAAPP.Test.Setting@5a45133e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RSDA.RSDAAPP.Test.Setting.checkPaymentStatus()'><b>checkPaymentStatus</b><br>Test class: RSDA.RSDAAPP.Test.Setting<br>Parameters: {cancel=Cancel, player_rewind_10=Rewind 10 seconds, empty_completed_description=No completed lessons, no_billing_history=There is no billing history., error_404_description=Please check the URL or start again from the home page., iniesta_tv_short=Iniesta TV, videos=lessons, quote_iniesta_bepassionate_underlined=play and learn., userid=skun799@gmail.com, landing_3points_highlight=3 key points, footer_help=Help Center, password=Saroj@1234, settings_myr_help_text=Your Rakuten ID and password are used to log into Iniesta Methodology. To change your personal information including your e-mail address and password, please log into my Rakuten., error_401_description=Please start again from the home page., empty_payment_history_description=Any payments you make will appear here., payment_continue_learning_hub=Continue to Learning Hub, download_in_progress=Downloading..., payment_success_header=Transaction completed!, label_new=New, paid_video_button=Purchase Learning Hub, notification_error_bookmarking=There was an error while bookmarking this video., title_transaction_policy_page=Transactions Policy - Iniesta's Methodology Digital, sign_up=Sign up, header_im_home=Iniesta’s Methodology Home, footer_im_digital=Iniesta’s Methodology Digital, player_pause=Pause, completed=Completed, billing_history=Billing history, payment_success_description=Thank you for your purchase. Please check your registered email inbox for confirmation., label_completed=Completed, footer_rakuten_group=Rakuten Group, inactive_subscriptions=Inactive subscriptions, log_out_edit_myr=Sign out and edit on my Rakuten, footer_heading_contact_us=CONTACT US, my_bookmarks=My Bookmarks, landing_see_sample_video=See Sample Video, player_forward_10=Forward 10 seconds, error_region_block_description=We are hoping to bring our service to you soon!
+
+For the time being, check out our exclusive Andrés Iniesta content on the Rakuten Global Sports Platform., sign_in_rid=Sign in with Rakuten ID, empty_bookmark_description=No bookmarked lessons, footer_privacy_policy=Privacy Policy, continue_to_purchase=Continue to purchase, my_progress_long=My Progress, landing_coaches_header=Coaches, title_iniestatv_page=Iniesta TV - Iniesta's Methodology Digital, Edit_page_url=https://my.rakuten.co.jp/, legal_privacy_title=Privacy Policy, coach_juanky_title=Former Coach and Director, landing_howtostart_header=How to, learning_hub_long=Learning Hub, payment_failed_header=Your transaction could not be processed., try_again=Try again, help_center_long=Help Center, label_order_paid=Paid, coach_quim_title=Coach and Director, payment_server_not_loading_description=The server is temporarily unable to load.
+Please try again in a few moments., label_subscription_active=Active, empty_payment_history_header=You have no payment history., footer_about_rakuten=About Rakuten, landing_howtostart_explore=Explore various categories on Learning Hub., settings_personal_info_modal_content=You will be logged out of Iniesta Methodology and taken to my Rakuten to edit your personal information., channels.learning-hub.physical=Physical, lessons_watched=Lessons completed, empty_bookmark_alert=When you bookmark a lesson, you can easily track it here., error_500_description=Please try again in a few seconds., landing_learning_hub_plan_duration=1 year subscription, landing_app_description=Improve your football skills on the go on your own device wherever you are.
+
+*Purchase Learning Hub for full access., label_premium=PREMIUM, landing_section_price=Price, decorative_or=OR, title_order_confrmation=Purchase confirmation - Iniesta's Methodology Digital, footer_heading_about=ABOUT, label_in_progress=Started, landing_poweredby_rid=Iniesta's Methodology Digital is powered by Rakuten ID.
+You will be redirected to a separate page to sign up., landing_register_cta=Start the Journey Now, explore_learninghub=Watch the Video Samples, landing_pricing_header=Pricing, coach_quim=Quim Ramón, video_quality_default=(Default), label_subscription_refunded=Refunded, add_to_bookmark=Added to My Bookmarks, button.back-to-previous-page=Back to previous page, landing_readycta_highlight=start the journey?, sign_in=Sign in, landing_section_features=Features, video_menu_subtitles=Subtitles, view_all_lessons=View all lessons, coach_iniesta_description=Founder of Iniesta’s Methodology and captain of Vissel Kobe team. He is a global star who contributed to the 2010 FIFA World Cup victory for the Spanish national team and has won the LaLiga title 9 times and the UEFA Champions League 4 times with FC Barcelona., coach_ivan_description=Coach and assistant director of Iniesta’s Methodology, Iván, has experience as a physical trainer, coach, and youth team coordinator in Spain. He is one of the coaches that Iniesta trusts, and is eager to spread the joy of football through Iniesta’s Methodology., quote_iniesta_bepassionate_end=while you, filter_sort_bypopularity=Sort by most popular, channels.learning-hub.mental=Mental, my_progress=See my progress, paywall_header=Sorry, this video is not available with your current plan., landing_howtostart_header_highlight=Start the Journey, label_order_pending=Pending, channels.learning-hub.technique-description=Learn various football skills from the basics to advanced including shooting, passing, dribbling, and more., settings_personal_info_modal_header=Edit personal information, pricing_annual_suffix=/year, error_generic_description=Please start again from the home page., notification_remove_from_bookmark=Removed from My Bookmarks, firstname=Mobile, footer_faq=FAQ, landing_readycta_start=Ready to, edit_my_rakuten=Edit on my Rakuten, empty_inactive_subscriptions_header=You have no inactive subscriptions., landing_point2_description=Various football topics catered for all positions., settings_personal_info=Personal information, order_number=Order number, description=Details, go_to_learninghub=Go to Learning Hub page, error_payment_nopermission_description=You don’t have permission to access this order page, or this order page URL has expired. Please go back to the home page and try again., coach_ivan=Iván Cascales, title_landing_page=Iniesta's Methodology Digital, footer_contact_us=Contact us, title_faq_page=FAQ - Iniesta's Methodology Digital, channels.learning-hub.mental-description=Learn how to train and manage your mental game for any game environment and play., my_progress_short=Progress, title_pricing_page=Pricing - Iniesta's Methodology Digital, landing_hero_header_middle=from a , menu.language.english=English, billing_information=Billing information, overview=Overview, settings_long=Settings, player_play=Play, coach_iniesta=Andrés Iniesta, landing_3points_end=of Iniesta's Methodology Digital?, landing_learning_hub_point2=Learn from experts on football and other sports-related disciplines, payment_error_description=We have run into an error while processing your transaction. Please try again in a few minutes., landing_learning_hub_point1=Get access to a growing library of premium lessons by Iniesta and coaches, landing_learning_hub_point4=Free access to selected episodes from the Iniesta TV series, label_subscription_expired=Expired, landing_learning_hub_point3=Growing library of lessons over time, purchase=Purchase, home=Home, button.go-to-rakuten-sports=Go to Rakuten Sports, meta_description_landing_page=Join the football journey with Andrés Iniesta and his coaches and improve your skills at your own convenience!, landing_point2_header=Variety, filter_sort_bymost=Sort by most recent, active_subscriptions=Active subscriptions, footer_contact=Contact, video_medium_quality=Medium quality, coach_juanky=Juan Carlos Calero, quote_iniesta_bepassionate_highlighted=passionate, excited, and have fun, landing_updates_header=Bulletin Board, tooltip_order_pending=Your transaction is being processed. This may take up to 20 minutes.
+You won’t be charged until your order has been processed successfully., username=rsda, video_highest_quality=Highest quality, Terms_page_url=https://stg-iniesta.ra-sports.net/terms?source=mobile, empty_active_subscriptions_description=You can purchase a subscription to access premium content in Learning Hub., error_region_block_header=We apologize for the inconvenience, but Iniesta’s Methodology Digital is currently not available in your region., sign_in_sign_up=Sign in/Sign up, quote_iniesta_bepassionate_start=Be, landing_3points_start=What are the, video_menu_off=Off, coming_soon=Coming soon, player_unmute=Unmute, footer_transactions_policy=Transactions Policy, pricing_tax_in=Tax included, service_period=Service period, landing_coach_video_button=Watch Coach's Greetings, help_center_short=Help, landing_see_more=See more, price=Price, remove_from_bookmarks=Removed from My Bookmarks, subscription_status=Subscription status, footer_heading_im=INIESTA'S METHODOLOGY, label_open=Open, legal.privacy.date-updated=Last Updated Date: April 1, 2022, error_500_header=The server is temporarily unable to load., error_401_header=Not authorized for access, landing_section_coaches=Coaches, my_progress_alert_newlessons=Check out the newly added lessons below!, payment_retry_description=Please retry your transaction or choose a new payment method., title_myprogress_page=My Progress - Iniesta's Methodology Digital, lastname=Testing, landing_purchase_now=Purchase now, video_menu_quality=Video quality, footer_pricing=Pricing, footer_help_contact=Help / Contact, rakuten_id=Rakuten ID, purchase_date=Purchased on, landing_hero_header_end=legend., footer_sustainability=Sustainability, payment_thankyou_header=Thank you for choosing Iniesta's Methodology!, landing_app_header=Download the official app!, back_to_top=Back to top, notification_add_to_bookmark=Added to My Bookmarks, player_exit_full_screen=Exit full screen, filter_sort_byleast=Sort by least recent, video_high_quality=High quality, footer_terms_of_service=Terms of Use, coach_iniesta_title=Founder of Iniesta's Methodology, coach_ivan_title=Coach and Assistant Director, title_privacy_page=Privacy Policy - Iniesta's Methodology Digital, landing_section_about=About, channels.learning-hub.strategy=Strategy, landing_howtostart_plan=Plan out your journey to improve the football skills you wish to work on., billing_sub_details={{plan_name}} - Purchase Date {{purchasedate}}, continue_watching=Continue learning, coach_juanky_description=Technical director Juan Carlos has been coaching and guiding Andrés to grow into the star player he is today for over 28 years. He holds the UEFA-PRO, the top license in Europe. When Iniesta decided to start his football school in Japan, he asked Juan to move to Japan and lead the school with him., download_button=Download, payment_history=Payment history, Privacy_page_url=https://stg-iniesta.ra-sports.net/privacy?source=mobile, continue_watching_description=Continue learning where you left off!, mark_as_watched=Mark as watched, learning_hub_short=Learn, label_free=FREE, button.go-to-payment-history=Go to Payment History, date=Date, channels.learning-hub.physical-description=Learn from Iniesta on how to train your body,prepare before a game,and manage a healthy diet., player_mute=Mute, see_all_updates=See all updates, notification_error_unbookmarking=There was an error while unbookmarking this video., title_learninghub_page=Learning Hub - Iniesta's Methodology Digital, bookmark_description=See all your saved videos, footer_apps_overview=Apps overview, coach_quim_description=Coach and director of Iniesta’s Methodology, Quim, has coached various youth teams including FC Barcelona for over 20 years. Fully trusted by Iniesta, Quim was the main coordinator and director of Iniesta's Methodology Campus in Summer 2021 upon Iniesta's request., ask_iniesta_long=Ask Iniesta, channels.learning-hub.bonus-description=Videos featuring Iniesta to be produced and available for streaming.Stay tuned., channels.learning-hub.bonus=Bonus, title_terms_page=Terms of Use - Iniesta's Methodology Digital, footer_copyright=© 2022 - 2023, Rakuten Group, Inc., payment_method=Payment method, player_full_screen=Full screen, landing_followus_end=on our channels!, landing_howtostart_enjoy=Enjoy your learnings!, footer_iniesta_methodology_school=Iniesta's Methodology School, paywall_description=Enable the lesson by purchasing a subscription for Learning Hub!, back_to_home=Back to home, empty_active_subscriptions_header=You have no active subscriptions., account_settings=Account settings, landing_hero_header_start=Learn football, log_out=Sign out, landing_point1_header=Convenience, landing_point3_header=Curated Programs, payment_modal_redirect_header=Please wait..., tooltip_order_failed=We couldn’t process your transaction. If any amount was deducted from your account, it will be refunded within 5-7 business days., completed_videos=Completed lessons, Contact_page_url=https://help.iniestamethodology-digital.com/hc/en-us/requests/new, error_generic_header=Sorry, there was an unknown error., landing_section_contact=Contact, landing_point1_description=Available on any device, at anytime, and anywhere., coach_iniesta_awards=1x FIFA World Cup
+1x Euro Cup
+4x UEFA Champions League
+6x Supercopa de España
+9x LaLiga
+1x Emperor’s Cup
+1x J.League Super Cup
+1x UEFA European Player of the Year
+1x UEFA European Championship Best Player of the Tournament, subscription_name=Subscription name, settings_full_name=Full name, landing_point3_description=Curated learning programs suggested based on level., error_payment_pending_description=We are currently trying to process your transaction.
+
+It may take up to 20 minutes to confirm the status of your transaction. Please refresh this page or go to your Payment History to see the most recent status for this transaction., empty_completed_alert=When you complete a lesson, you can easily track it here., empty_inactive_subscriptions_description=Past subscriptions that are expired or refunded will appear here., channels.learning-hub.technique=Technique, legal_terms_title=Terms of Use, total=Total, landing_followus_highlight=Follow us, pricing.learning-hub={{learninghub_price}}, payment_modal_redirect_description=You will be redirected to Rakuten Pay to complete your transaction., landing_hero_description=Iniesta’s Methodology Digital offers a variety of football lessons taught by the world-class football player, Andrés Iniesta, and his coaches catered to your learning cadence. 
+
+Join the football journey with us now to improve skills of your choice!, video_lower_quality=Lower quality, purchase_subscription=Purchase plan, title_settings_page=Settings - Iniesta's Methodology Digital, label_order_failed=Failed, iniesta_tv_long=Iniesta TV, payment_confirm_description=Please confirm the details of your subscription before proceeding to purchase.
+You will be redirected to Rakuten Pay to complete your transaction., completed_videos_description=See all of your completed lessons, landing_howtostart_register=Register to Iniesta's Methodology with Rakuten ID., Delete_Page_url=https://member.id.rakuten.co.jp/profile/account-security/delete, payment_error_header=An error has occurred., label_preview=Preview, label_open_askIniesta=OPEN, channels.learning-hub.strategy-description=Learn both team's and individual's method for each play and game scenario., learning_hub_description=Learning Hub offers 2-5 minute point lessons on various football skills. Improve skills of your choice at your own pace and time with Learning Hub., video_count=videos, error_404_header=Sorry, we couldn't find the page you're looking for., payment_confirm_header=Confirm order details, payment_retry_transaction=Retry transaction, filter_sort_byalpha=Sort by ascending order, landing_learning_hub_description=2-5 minute point lessons}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at RSDA.RSDAAPP.Test.Setting.setup(Setting.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace867205829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace867205829'><pre>java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at RSDA.RSDAAPP.Test.Setting.setup(Setting.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>RSDA.RSDAAPP.Test.Setting@5a45133e</td></tr>
+<tr>
+<td title='RSDA.RSDAAPP.Test.Setting.checkEditOnMyRakuten()'><b>checkEditOnMyRakuten</b><br>Test class: RSDA.RSDAAPP.Test.Setting<br>Parameters: {cancel=Cancel, player_rewind_10=Rewind 10 seconds, empty_completed_description=No completed lessons, no_billing_history=There is no billing history., error_404_description=Please check the URL or start again from the home page., iniesta_tv_short=Iniesta TV, videos=lessons, quote_iniesta_bepassionate_underlined=play and learn., userid=skun799@gmail.com, landing_3points_highlight=3 key points, footer_help=Help Center, password=Saroj@1234, settings_myr_help_text=Your Rakuten ID and password are used to log into Iniesta Methodology. To change your personal information including your e-mail address and password, please log into my Rakuten., error_401_description=Please start again from the home page., empty_payment_history_description=Any payments you make will appear here., payment_continue_learning_hub=Continue to Learning Hub, download_in_progress=Downloading..., payment_success_header=Transaction completed!, label_new=New, paid_video_button=Purchase Learning Hub, notification_error_bookmarking=There was an error while bookmarking this video., title_transaction_policy_page=Transactions Policy - Iniesta's Methodology Digital, sign_up=Sign up, header_im_home=Iniesta’s Methodology Home, footer_im_digital=Iniesta’s Methodology Digital, player_pause=Pause, completed=Completed, billing_history=Billing history, payment_success_description=Thank you for your purchase. Please check your registered email inbox for confirmation., label_completed=Completed, footer_rakuten_group=Rakuten Group, inactive_subscriptions=Inactive subscriptions, log_out_edit_myr=Sign out and edit on my Rakuten, footer_heading_contact_us=CONTACT US, my_bookmarks=My Bookmarks, landing_see_sample_video=See Sample Video, player_forward_10=Forward 10 seconds, error_region_block_description=We are hoping to bring our service to you soon!
+
+For the time being, check out our exclusive Andrés Iniesta content on the Rakuten Global Sports Platform., sign_in_rid=Sign in with Rakuten ID, empty_bookmark_description=No bookmarked lessons, footer_privacy_policy=Privacy Policy, continue_to_purchase=Continue to purchase, my_progress_long=My Progress, landing_coaches_header=Coaches, title_iniestatv_page=Iniesta TV - Iniesta's Methodology Digital, Edit_page_url=https://my.rakuten.co.jp/, legal_privacy_title=Privacy Policy, coach_juanky_title=Former Coach and Director, landing_howtostart_header=How to, learning_hub_long=Learning Hub, payment_failed_header=Your transaction could not be processed., try_again=Try again, help_center_long=Help Center, label_order_paid=Paid, coach_quim_title=Coach and Director, payment_server_not_loading_description=The server is temporarily unable to load.
+Please try again in a few moments., label_subscription_active=Active, empty_payment_history_header=You have no payment history., footer_about_rakuten=About Rakuten, landing_howtostart_explore=Explore various categories on Learning Hub., settings_personal_info_modal_content=You will be logged out of Iniesta Methodology and taken to my Rakuten to edit your personal information., channels.learning-hub.physical=Physical, lessons_watched=Lessons completed, empty_bookmark_alert=When you bookmark a lesson, you can easily track it here., error_500_description=Please try again in a few seconds., landing_learning_hub_plan_duration=1 year subscription, landing_app_description=Improve your football skills on the go on your own device wherever you are.
+
+*Purchase Learning Hub for full access., label_premium=PREMIUM, landing_section_price=Price, decorative_or=OR, title_order_confrmation=Purchase confirmation - Iniesta's Methodology Digital, footer_heading_about=ABOUT, label_in_progress=Started, landing_poweredby_rid=Iniesta's Methodology Digital is powered by Rakuten ID.
+You will be redirected to a separate page to sign up., landing_register_cta=Start the Journey Now, explore_learninghub=Watch the Video Samples, landing_pricing_header=Pricing, coach_quim=Quim Ramón, video_quality_default=(Default), label_subscription_refunded=Refunded, add_to_bookmark=Added to My Bookmarks, button.back-to-previous-page=Back to previous page, landing_readycta_highlight=start the journey?, sign_in=Sign in, landing_section_features=Features, video_menu_subtitles=Subtitles, view_all_lessons=View all lessons, coach_iniesta_description=Founder of Iniesta’s Methodology and captain of Vissel Kobe team. He is a global star who contributed to the 2010 FIFA World Cup victory for the Spanish national team and has won the LaLiga title 9 times and the UEFA Champions League 4 times with FC Barcelona., coach_ivan_description=Coach and assistant director of Iniesta’s Methodology, Iván, has experience as a physical trainer, coach, and youth team coordinator in Spain. He is one of the coaches that Iniesta trusts, and is eager to spread the joy of football through Iniesta’s Methodology., quote_iniesta_bepassionate_end=while you, filter_sort_bypopularity=Sort by most popular, channels.learning-hub.mental=Mental, my_progress=See my progress, paywall_header=Sorry, this video is not available with your current plan., landing_howtostart_header_highlight=Start the Journey, label_order_pending=Pending, channels.learning-hub.technique-description=Learn various football skills from the basics to advanced including shooting, passing, dribbling, and more., settings_personal_info_modal_header=Edit personal information, pricing_annual_suffix=/year, error_generic_description=Please start again from the home page., notification_remove_from_bookmark=Removed from My Bookmarks, firstname=Mobile, footer_faq=FAQ, landing_readycta_start=Ready to, edit_my_rakuten=Edit on my Rakuten, empty_inactive_subscriptions_header=You have no inactive subscriptions., landing_point2_description=Various football topics catered for all positions., settings_personal_info=Personal information, order_number=Order number, description=Details, go_to_learninghub=Go to Learning Hub page, error_payment_nopermission_description=You don’t have permission to access this order page, or this order page URL has expired. Please go back to the home page and try again., coach_ivan=Iván Cascales, title_landing_page=Iniesta's Methodology Digital, footer_contact_us=Contact us, title_faq_page=FAQ - Iniesta's Methodology Digital, channels.learning-hub.mental-description=Learn how to train and manage your mental game for any game environment and play., my_progress_short=Progress, title_pricing_page=Pricing - Iniesta's Methodology Digital, landing_hero_header_middle=from a , menu.language.english=English, billing_information=Billing information, overview=Overview, settings_long=Settings, player_play=Play, coach_iniesta=Andrés Iniesta, landing_3points_end=of Iniesta's Methodology Digital?, landing_learning_hub_point2=Learn from experts on football and other sports-related disciplines, payment_error_description=We have run into an error while processing your transaction. Please try again in a few minutes., landing_learning_hub_point1=Get access to a growing library of premium lessons by Iniesta and coaches, landing_learning_hub_point4=Free access to selected episodes from the Iniesta TV series, label_subscription_expired=Expired, landing_learning_hub_point3=Growing library of lessons over time, purchase=Purchase, home=Home, button.go-to-rakuten-sports=Go to Rakuten Sports, meta_description_landing_page=Join the football journey with Andrés Iniesta and his coaches and improve your skills at your own convenience!, landing_point2_header=Variety, filter_sort_bymost=Sort by most recent, active_subscriptions=Active subscriptions, footer_contact=Contact, video_medium_quality=Medium quality, coach_juanky=Juan Carlos Calero, quote_iniesta_bepassionate_highlighted=passionate, excited, and have fun, landing_updates_header=Bulletin Board, tooltip_order_pending=Your transaction is being processed. This may take up to 20 minutes.
+You won’t be charged until your order has been processed successfully., username=rsda, video_highest_quality=Highest quality, Terms_page_url=https://stg-iniesta.ra-sports.net/terms?source=mobile, empty_active_subscriptions_description=You can purchase a subscription to access premium content in Learning Hub., error_region_block_header=We apologize for the inconvenience, but Iniesta’s Methodology Digital is currently not available in your region., sign_in_sign_up=Sign in/Sign up, quote_iniesta_bepassionate_start=Be, landing_3points_start=What are the, video_menu_off=Off, coming_soon=Coming soon, player_unmute=Unmute, footer_transactions_policy=Transactions Policy, pricing_tax_in=Tax included, service_period=Service period, landing_coach_video_button=Watch Coach's Greetings, help_center_short=Help, landing_see_more=See more, price=Price, remove_from_bookmarks=Removed from My Bookmarks, subscription_status=Subscription status, footer_heading_im=INIESTA'S METHODOLOGY, label_open=Open, legal.privacy.date-updated=Last Updated Date: April 1, 2022, error_500_header=The server is temporarily unable to load., error_401_header=Not authorized for access, landing_section_coaches=Coaches, my_progress_alert_newlessons=Check out the newly added lessons below!, payment_retry_description=Please retry your transaction or choose a new payment method., title_myprogress_page=My Progress - Iniesta's Methodology Digital, lastname=Testing, landing_purchase_now=Purchase now, video_menu_quality=Video quality, footer_pricing=Pricing, footer_help_contact=Help / Contact, rakuten_id=Rakuten ID, purchase_date=Purchased on, landing_hero_header_end=legend., footer_sustainability=Sustainability, payment_thankyou_header=Thank you for choosing Iniesta's Methodology!, landing_app_header=Download the official app!, back_to_top=Back to top, notification_add_to_bookmark=Added to My Bookmarks, player_exit_full_screen=Exit full screen, filter_sort_byleast=Sort by least recent, video_high_quality=High quality, footer_terms_of_service=Terms of Use, coach_iniesta_title=Founder of Iniesta's Methodology, coach_ivan_title=Coach and Assistant Director, title_privacy_page=Privacy Policy - Iniesta's Methodology Digital, landing_section_about=About, channels.learning-hub.strategy=Strategy, landing_howtostart_plan=Plan out your journey to improve the football skills you wish to work on., billing_sub_details={{plan_name}} - Purchase Date {{purchasedate}}, continue_watching=Continue learning, coach_juanky_description=Technical director Juan Carlos has been coaching and guiding Andrés to grow into the star player he is today for over 28 years. He holds the UEFA-PRO, the top license in Europe. When Iniesta decided to start his football school in Japan, he asked Juan to move to Japan and lead the school with him., download_button=Download, payment_history=Payment history, Privacy_page_url=https://stg-iniesta.ra-sports.net/privacy?source=mobile, continue_watching_description=Continue learning where you left off!, mark_as_watched=Mark as watched, learning_hub_short=Learn, label_free=FREE, button.go-to-payment-history=Go to Payment History, date=Date, channels.learning-hub.physical-description=Learn from Iniesta on how to train your body,prepare before a game,and manage a healthy diet., player_mute=Mute, see_all_updates=See all updates, notification_error_unbookmarking=There was an error while unbookmarking this video., title_learninghub_page=Learning Hub - Iniesta's Methodology Digital, bookmark_description=See all your saved videos, footer_apps_overview=Apps overview, coach_quim_description=Coach and director of Iniesta’s Methodology, Quim, has coached various youth teams including FC Barcelona for over 20 years. Fully trusted by Iniesta, Quim was the main coordinator and director of Iniesta's Methodology Campus in Summer 2021 upon Iniesta's request., ask_iniesta_long=Ask Iniesta, channels.learning-hub.bonus-description=Videos featuring Iniesta to be produced and available for streaming.Stay tuned., channels.learning-hub.bonus=Bonus, title_terms_page=Terms of Use - Iniesta's Methodology Digital, footer_copyright=© 2022 - 2023, Rakuten Group, Inc., payment_method=Payment method, player_full_screen=Full screen, landing_followus_end=on our channels!, landing_howtostart_enjoy=Enjoy your learnings!, footer_iniesta_methodology_school=Iniesta's Methodology School, paywall_description=Enable the lesson by purchasing a subscription for Learning Hub!, back_to_home=Back to home, empty_active_subscriptions_header=You have no active subscriptions., account_settings=Account settings, landing_hero_header_start=Learn football, log_out=Sign out, landing_point1_header=Convenience, landing_point3_header=Curated Programs, payment_modal_redirect_header=Please wait..., tooltip_order_failed=We couldn’t process your transaction. If any amount was deducted from your account, it will be refunded within 5-7 business days., completed_videos=Completed lessons, Contact_page_url=https://help.iniestamethodology-digital.com/hc/en-us/requests/new, error_generic_header=Sorry, there was an unknown error., landing_section_contact=Contact, landing_point1_description=Available on any device, at anytime, and anywhere., coach_iniesta_awards=1x FIFA World Cup
+1x Euro Cup
+4x UEFA Champions League
+6x Supercopa de España
+9x LaLiga
+1x Emperor’s Cup
+1x J.League Super Cup
+1x UEFA European Player of the Year
+1x UEFA European Championship Best Player of the Tournament, subscription_name=Subscription name, settings_full_name=Full name, landing_point3_description=Curated learning programs suggested based on level., error_payment_pending_description=We are currently trying to process your transaction.
+
+It may take up to 20 minutes to confirm the status of your transaction. Please refresh this page or go to your Payment History to see the most recent status for this transaction., empty_completed_alert=When you complete a lesson, you can easily track it here., empty_inactive_subscriptions_description=Past subscriptions that are expired or refunded will appear here., channels.learning-hub.technique=Technique, legal_terms_title=Terms of Use, total=Total, landing_followus_highlight=Follow us, pricing.learning-hub={{learninghub_price}}, payment_modal_redirect_description=You will be redirected to Rakuten Pay to complete your transaction., landing_hero_description=Iniesta’s Methodology Digital offers a variety of football lessons taught by the world-class football player, Andrés Iniesta, and his coaches catered to your learning cadence. 
+
+Join the football journey with us now to improve skills of your choice!, video_lower_quality=Lower quality, purchase_subscription=Purchase plan, title_settings_page=Settings - Iniesta's Methodology Digital, label_order_failed=Failed, iniesta_tv_long=Iniesta TV, payment_confirm_description=Please confirm the details of your subscription before proceeding to purchase.
+You will be redirected to Rakuten Pay to complete your transaction., completed_videos_description=See all of your completed lessons, landing_howtostart_register=Register to Iniesta's Methodology with Rakuten ID., Delete_Page_url=https://member.id.rakuten.co.jp/profile/account-security/delete, payment_error_header=An error has occurred., label_preview=Preview, label_open_askIniesta=OPEN, channels.learning-hub.strategy-description=Learn both team's and individual's method for each play and game scenario., learning_hub_description=Learning Hub offers 2-5 minute point lessons on various football skills. Improve skills of your choice at your own pace and time with Learning Hub., video_count=videos, error_404_header=Sorry, we couldn't find the page you're looking for., payment_confirm_header=Confirm order details, payment_retry_transaction=Retry transaction, filter_sort_byalpha=Sort by ascending order, landing_learning_hub_description=2-5 minute point lessons}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at RSDA.RSDAAPP.Test.Setting.setup(Setting.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace475024998", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace475024998'><pre>java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at RSDA.RSDAAPP.Test.Setting.setup(Setting.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>RSDA.RSDAAPP.Test.Setting@5a45133e</td></tr>
+<tr>
+<td title='RSDA.RSDAAPP.Test.Setting.checkSubscriptionStatus()'><b>checkSubscriptionStatus</b><br>Test class: RSDA.RSDAAPP.Test.Setting<br>Parameters: {cancel=Cancel, player_rewind_10=Rewind 10 seconds, empty_completed_description=No completed lessons, no_billing_history=There is no billing history., error_404_description=Please check the URL or start again from the home page., iniesta_tv_short=Iniesta TV, videos=lessons, quote_iniesta_bepassionate_underlined=play and learn., userid=skun799@gmail.com, landing_3points_highlight=3 key points, footer_help=Help Center, password=Saroj@1234, settings_myr_help_text=Your Rakuten ID and password are used to log into Iniesta Methodology. To change your personal information including your e-mail address and password, please log into my Rakuten., error_401_description=Please start again from the home page., empty_payment_history_description=Any payments you make will appear here., payment_continue_learning_hub=Continue to Learning Hub, download_in_progress=Downloading..., payment_success_header=Transaction completed!, label_new=New, paid_video_button=Purchase Learning Hub, notification_error_bookmarking=There was an error while bookmarking this video., title_transaction_policy_page=Transactions Policy - Iniesta's Methodology Digital, sign_up=Sign up, header_im_home=Iniesta’s Methodology Home, footer_im_digital=Iniesta’s Methodology Digital, player_pause=Pause, completed=Completed, billing_history=Billing history, payment_success_description=Thank you for your purchase. Please check your registered email inbox for confirmation., label_completed=Completed, footer_rakuten_group=Rakuten Group, inactive_subscriptions=Inactive subscriptions, log_out_edit_myr=Sign out and edit on my Rakuten, footer_heading_contact_us=CONTACT US, my_bookmarks=My Bookmarks, landing_see_sample_video=See Sample Video, player_forward_10=Forward 10 seconds, error_region_block_description=We are hoping to bring our service to you soon!
+
+For the time being, check out our exclusive Andrés Iniesta content on the Rakuten Global Sports Platform., sign_in_rid=Sign in with Rakuten ID, empty_bookmark_description=No bookmarked lessons, footer_privacy_policy=Privacy Policy, continue_to_purchase=Continue to purchase, my_progress_long=My Progress, landing_coaches_header=Coaches, title_iniestatv_page=Iniesta TV - Iniesta's Methodology Digital, Edit_page_url=https://my.rakuten.co.jp/, legal_privacy_title=Privacy Policy, coach_juanky_title=Former Coach and Director, landing_howtostart_header=How to, learning_hub_long=Learning Hub, payment_failed_header=Your transaction could not be processed., try_again=Try again, help_center_long=Help Center, label_order_paid=Paid, coach_quim_title=Coach and Director, payment_server_not_loading_description=The server is temporarily unable to load.
+Please try again in a few moments., label_subscription_active=Active, empty_payment_history_header=You have no payment history., footer_about_rakuten=About Rakuten, landing_howtostart_explore=Explore various categories on Learning Hub., settings_personal_info_modal_content=You will be logged out of Iniesta Methodology and taken to my Rakuten to edit your personal information., channels.learning-hub.physical=Physical, lessons_watched=Lessons completed, empty_bookmark_alert=When you bookmark a lesson, you can easily track it here., error_500_description=Please try again in a few seconds., landing_learning_hub_plan_duration=1 year subscription, landing_app_description=Improve your football skills on the go on your own device wherever you are.
+
+*Purchase Learning Hub for full access., label_premium=PREMIUM, landing_section_price=Price, decorative_or=OR, title_order_confrmation=Purchase confirmation - Iniesta's Methodology Digital, footer_heading_about=ABOUT, label_in_progress=Started, landing_poweredby_rid=Iniesta's Methodology Digital is powered by Rakuten ID.
+You will be redirected to a separate page to sign up., landing_register_cta=Start the Journey Now, explore_learninghub=Watch the Video Samples, landing_pricing_header=Pricing, coach_quim=Quim Ramón, video_quality_default=(Default), label_subscription_refunded=Refunded, add_to_bookmark=Added to My Bookmarks, button.back-to-previous-page=Back to previous page, landing_readycta_highlight=start the journey?, sign_in=Sign in, landing_section_features=Features, video_menu_subtitles=Subtitles, view_all_lessons=View all lessons, coach_iniesta_description=Founder of Iniesta’s Methodology and captain of Vissel Kobe team. He is a global star who contributed to the 2010 FIFA World Cup victory for the Spanish national team and has won the LaLiga title 9 times and the UEFA Champions League 4 times with FC Barcelona., coach_ivan_description=Coach and assistant director of Iniesta’s Methodology, Iván, has experience as a physical trainer, coach, and youth team coordinator in Spain. He is one of the coaches that Iniesta trusts, and is eager to spread the joy of football through Iniesta’s Methodology., quote_iniesta_bepassionate_end=while you, filter_sort_bypopularity=Sort by most popular, channels.learning-hub.mental=Mental, my_progress=See my progress, paywall_header=Sorry, this video is not available with your current plan., landing_howtostart_header_highlight=Start the Journey, label_order_pending=Pending, channels.learning-hub.technique-description=Learn various football skills from the basics to advanced including shooting, passing, dribbling, and more., settings_personal_info_modal_header=Edit personal information, pricing_annual_suffix=/year, error_generic_description=Please start again from the home page., notification_remove_from_bookmark=Removed from My Bookmarks, firstname=Mobile, footer_faq=FAQ, landing_readycta_start=Ready to, edit_my_rakuten=Edit on my Rakuten, empty_inactive_subscriptions_header=You have no inactive subscriptions., landing_point2_description=Various football topics catered for all positions., settings_personal_info=Personal information, order_number=Order number, description=Details, go_to_learninghub=Go to Learning Hub page, error_payment_nopermission_description=You don’t have permission to access this order page, or this order page URL has expired. Please go back to the home page and try again., coach_ivan=Iván Cascales, title_landing_page=Iniesta's Methodology Digital, footer_contact_us=Contact us, title_faq_page=FAQ - Iniesta's Methodology Digital, channels.learning-hub.mental-description=Learn how to train and manage your mental game for any game environment and play., my_progress_short=Progress, title_pricing_page=Pricing - Iniesta's Methodology Digital, landing_hero_header_middle=from a , menu.language.english=English, billing_information=Billing information, overview=Overview, settings_long=Settings, player_play=Play, coach_iniesta=Andrés Iniesta, landing_3points_end=of Iniesta's Methodology Digital?, landing_learning_hub_point2=Learn from experts on football and other sports-related disciplines, payment_error_description=We have run into an error while processing your transaction. Please try again in a few minutes., landing_learning_hub_point1=Get access to a growing library of premium lessons by Iniesta and coaches, landing_learning_hub_point4=Free access to selected episodes from the Iniesta TV series, label_subscription_expired=Expired, landing_learning_hub_point3=Growing library of lessons over time, purchase=Purchase, home=Home, button.go-to-rakuten-sports=Go to Rakuten Sports, meta_description_landing_page=Join the football journey with Andrés Iniesta and his coaches and improve your skills at your own convenience!, landing_point2_header=Variety, filter_sort_bymost=Sort by most recent, active_subscriptions=Active subscriptions, footer_contact=Contact, video_medium_quality=Medium quality, coach_juanky=Juan Carlos Calero, quote_iniesta_bepassionate_highlighted=passionate, excited, and have fun, landing_updates_header=Bulletin Board, tooltip_order_pending=Your transaction is being processed. This may take up to 20 minutes.
+You won’t be charged until your order has been processed successfully., username=rsda, video_highest_quality=Highest quality, Terms_page_url=https://stg-iniesta.ra-sports.net/terms?source=mobile, empty_active_subscriptions_description=You can purchase a subscription to access premium content in Learning Hub., error_region_block_header=We apologize for the inconvenience, but Iniesta’s Methodology Digital is currently not available in your region., sign_in_sign_up=Sign in/Sign up, quote_iniesta_bepassionate_start=Be, landing_3points_start=What are the, video_menu_off=Off, coming_soon=Coming soon, player_unmute=Unmute, footer_transactions_policy=Transactions Policy, pricing_tax_in=Tax included, service_period=Service period, landing_coach_video_button=Watch Coach's Greetings, help_center_short=Help, landing_see_more=See more, price=Price, remove_from_bookmarks=Removed from My Bookmarks, subscription_status=Subscription status, footer_heading_im=INIESTA'S METHODOLOGY, label_open=Open, legal.privacy.date-updated=Last Updated Date: April 1, 2022, error_500_header=The server is temporarily unable to load., error_401_header=Not authorized for access, landing_section_coaches=Coaches, my_progress_alert_newlessons=Check out the newly added lessons below!, payment_retry_description=Please retry your transaction or choose a new payment method., title_myprogress_page=My Progress - Iniesta's Methodology Digital, lastname=Testing, landing_purchase_now=Purchase now, video_menu_quality=Video quality, footer_pricing=Pricing, footer_help_contact=Help / Contact, rakuten_id=Rakuten ID, purchase_date=Purchased on, landing_hero_header_end=legend., footer_sustainability=Sustainability, payment_thankyou_header=Thank you for choosing Iniesta's Methodology!, landing_app_header=Download the official app!, back_to_top=Back to top, notification_add_to_bookmark=Added to My Bookmarks, player_exit_full_screen=Exit full screen, filter_sort_byleast=Sort by least recent, video_high_quality=High quality, footer_terms_of_service=Terms of Use, coach_iniesta_title=Founder of Iniesta's Methodology, coach_ivan_title=Coach and Assistant Director, title_privacy_page=Privacy Policy - Iniesta's Methodology Digital, landing_section_about=About, channels.learning-hub.strategy=Strategy, landing_howtostart_plan=Plan out your journey to improve the football skills you wish to work on., billing_sub_details={{plan_name}} - Purchase Date {{purchasedate}}, continue_watching=Continue learning, coach_juanky_description=Technical director Juan Carlos has been coaching and guiding Andrés to grow into the star player he is today for over 28 years. He holds the UEFA-PRO, the top license in Europe. When Iniesta decided to start his football school in Japan, he asked Juan to move to Japan and lead the school with him., download_button=Download, payment_history=Payment history, Privacy_page_url=https://stg-iniesta.ra-sports.net/privacy?source=mobile, continue_watching_description=Continue learning where you left off!, mark_as_watched=Mark as watched, learning_hub_short=Learn, label_free=FREE, button.go-to-payment-history=Go to Payment History, date=Date, channels.learning-hub.physical-description=Learn from Iniesta on how to train your body,prepare before a game,and manage a healthy diet., player_mute=Mute, see_all_updates=See all updates, notification_error_unbookmarking=There was an error while unbookmarking this video., title_learninghub_page=Learning Hub - Iniesta's Methodology Digital, bookmark_description=See all your saved videos, footer_apps_overview=Apps overview, coach_quim_description=Coach and director of Iniesta’s Methodology, Quim, has coached various youth teams including FC Barcelona for over 20 years. Fully trusted by Iniesta, Quim was the main coordinator and director of Iniesta's Methodology Campus in Summer 2021 upon Iniesta's request., ask_iniesta_long=Ask Iniesta, channels.learning-hub.bonus-description=Videos featuring Iniesta to be produced and available for streaming.Stay tuned., channels.learning-hub.bonus=Bonus, title_terms_page=Terms of Use - Iniesta's Methodology Digital, footer_copyright=© 2022 - 2023, Rakuten Group, Inc., payment_method=Payment method, player_full_screen=Full screen, landing_followus_end=on our channels!, landing_howtostart_enjoy=Enjoy your learnings!, footer_iniesta_methodology_school=Iniesta's Methodology School, paywall_description=Enable the lesson by purchasing a subscription for Learning Hub!, back_to_home=Back to home, empty_active_subscriptions_header=You have no active subscriptions., account_settings=Account settings, landing_hero_header_start=Learn football, log_out=Sign out, landing_point1_header=Convenience, landing_point3_header=Curated Programs, payment_modal_redirect_header=Please wait..., tooltip_order_failed=We couldn’t process your transaction. If any amount was deducted from your account, it will be refunded within 5-7 business days., completed_videos=Completed lessons, Contact_page_url=https://help.iniestamethodology-digital.com/hc/en-us/requests/new, error_generic_header=Sorry, there was an unknown error., landing_section_contact=Contact, landing_point1_description=Available on any device, at anytime, and anywhere., coach_iniesta_awards=1x FIFA World Cup
+1x Euro Cup
+4x UEFA Champions League
+6x Supercopa de España
+9x LaLiga
+1x Emperor’s Cup
+1x J.League Super Cup
+1x UEFA European Player of the Year
+1x UEFA European Championship Best Player of the Tournament, subscription_name=Subscription name, settings_full_name=Full name, landing_point3_description=Curated learning programs suggested based on level., error_payment_pending_description=We are currently trying to process your transaction.
+
+It may take up to 20 minutes to confirm the status of your transaction. Please refresh this page or go to your Payment History to see the most recent status for this transaction., empty_completed_alert=When you complete a lesson, you can easily track it here., empty_inactive_subscriptions_description=Past subscriptions that are expired or refunded will appear here., channels.learning-hub.technique=Technique, legal_terms_title=Terms of Use, total=Total, landing_followus_highlight=Follow us, pricing.learning-hub={{learninghub_price}}, payment_modal_redirect_description=You will be redirected to Rakuten Pay to complete your transaction., landing_hero_description=Iniesta’s Methodology Digital offers a variety of football lessons taught by the world-class football player, Andrés Iniesta, and his coaches catered to your learning cadence. 
+
+Join the football journey with us now to improve skills of your choice!, video_lower_quality=Lower quality, purchase_subscription=Purchase plan, title_settings_page=Settings - Iniesta's Methodology Digital, label_order_failed=Failed, iniesta_tv_long=Iniesta TV, payment_confirm_description=Please confirm the details of your subscription before proceeding to purchase.
+You will be redirected to Rakuten Pay to complete your transaction., completed_videos_description=See all of your completed lessons, landing_howtostart_register=Register to Iniesta's Methodology with Rakuten ID., Delete_Page_url=https://member.id.rakuten.co.jp/profile/account-security/delete, payment_error_header=An error has occurred., label_preview=Preview, label_open_askIniesta=OPEN, channels.learning-hub.strategy-description=Learn both team's and individual's method for each play and game scenario., learning_hub_description=Learning Hub offers 2-5 minute point lessons on various football skills. Improve skills of your choice at your own pace and time with Learning Hub., video_count=videos, error_404_header=Sorry, we couldn't find the page you're looking for., payment_confirm_header=Confirm order details, payment_retry_transaction=Retry transaction, filter_sort_byalpha=Sort by ascending order, landing_learning_hub_description=2-5 minute point lessons}</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at RSDA.RSDAAPP.Test.Setting.setup(Setting.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace393481646", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace393481646'><pre>java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at RSDA.RSDAAPP.Test.Setting.setup(Setting.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>RSDA.RSDAAPP.Test.Setting@5a45133e</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RSDA_APP_AUTOMATION]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="RSDA.RSDAAPP.Utility.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="LearningHub(failed)" verbose="0">
+    <classes>
+      <class name="RSDA.RSDAAPP.Test.LearningHub">
+        <methods>
+          <include name="setup"/>
+          <include name="playPremiumVideo"/>
+          <include name="playContinueWatchingvideo" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- RSDA.RSDAAPP.Test.LearningHub -->
+    </classes>
+  </test> <!-- LearningHub(failed) -->
+  <test thread-count="5" name="IniestaTv(failed)" verbose="0">
+    <classes>
+      <class name="RSDA.RSDAAPP.Test.IniestaTv">
+        <methods>
+          <include name="setup"/>
+          <include name="playIniestaVideo"/>
+          <include name="checkDescription" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- RSDA.RSDAAPP.Test.IniestaTv -->
+    </classes>
+  </test> <!-- IniestaTv(failed) -->
+</suite> <!-- Failed suite [RSDA_APP_AUTOMATION] -->

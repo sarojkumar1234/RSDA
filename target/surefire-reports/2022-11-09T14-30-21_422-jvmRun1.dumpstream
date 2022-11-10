@@ -1,0 +1,11 @@
+# Created at 2022-11-09T14:32:50.980
+An unknown server-side error occurred while processing the command. Original error: disconnected: unable to connect to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=107.0.5304.91)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'RINMAC2974', ip: 'fe80:0:0:0:1437:56fe:777f:66ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.2.1', java.version: '18.0.1.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5b7b428a-4241-4704-b943-030ee6885ee6, screenshot {}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UIAutomator2, appium:chromedriverExecutable: /Users/saroj.kumar/Desktop/..., appium:databaseEnabled: false, appium:desired: {automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: /Users/saroj.kumar/Desktop/..., noReset: true, platformName: android, udid: 321014504727}, appium:deviceApiLevel: 29, appium:deviceManufacturer: ZTE, appium:deviceModel: ZR01, appium:deviceName: 321014504727, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2460, appium:deviceUDID: 321014504727, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 3, appium:platformVersion: 10, appium:statBarHeight: 99, appium:takesScreenshot: true, appium:udid: 321014504727, appium:viewportRect: {height: 2142, left: 0, top: 99, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: android}
+Session ID: 5b7b428a-4241-4704-b943-030ee6885ee6
+

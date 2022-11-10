@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RSDA_APP_AUTOMATION">
+<listeners>
+<listener class-name="RSDA.RSDAAPP.Utility.Listeners"></listener>
+
+</listeners>
+
+	<test thread-count="5" name="SignUp">
+		<classes>
+			<class name="RSDA.RSDAAPP.Test.Register" />
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="UnsubscribedUserLearningHub">
+		<classes>
+			<class name="RSDA.RSDAAPP.Test.LearninghubUnsubscribed"/>
+
+		</classes>
+	</test> <!-- Test -->
+	
+
+	<test thread-count="5" name="UnsubscribedUser_Iniesta">
+      <classes>
+			<class name="RSDA.RSDAAPP.Test.IniestaTvPremiumUser"/>
+
+		</classes>
+		
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
